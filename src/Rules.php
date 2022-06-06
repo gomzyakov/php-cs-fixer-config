@@ -122,7 +122,7 @@ class Rules
         'phpdoc_no_empty_return'                        => false,
         'no_trailing_whitespace_in_comment'             => false,
         'php_unit_test_class_requires_covers'           => true,
-        'php_unit_method_casing'                        => ['case' => 'camel_case'],
+        'php_unit_method_casing'                        => ['case' => 'snake_case'],
         'php_unit_fqcn_annotation'                      => true,
         'array_indentation'                             => true,
         'class_attributes_separation'                   => [
