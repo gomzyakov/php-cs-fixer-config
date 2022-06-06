@@ -1,0 +1,27 @@
+{
+  "name": "gomzyakov/php-cs-rules",
+  "type": "package",
+  "description": "Just preferred code style rules for `php-cs-fixer`",
+  "keywords": [
+    "php",
+    "php-cs-fixer",
+    "code-style ",
+    "php-cs-fixer-rules"
+  ],
+  "homepage": "https://github.com/gomzyakov/php-cs-rules",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexander Gomzyakov",
+      "email": "alexander.gomzyakov@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Gomzyakov\\": "src/"
+    }
+  }
+}
