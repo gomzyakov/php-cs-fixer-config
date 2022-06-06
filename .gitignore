@@ -3,8 +3,8 @@
 /.vscode
 
 # Composer
-/tmp
 /vendor
+composer.lock
 
 # phpunit
 .phpunit.result.cache
