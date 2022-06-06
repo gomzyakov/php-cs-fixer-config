@@ -12,14 +12,8 @@ help: ## Show this help
 build: ## Build docker image for local development
 	docker compose build
 
-latest: clean ## Install latest php dependencies
-	docker compose run app composer update -n --ansi --prefer-dist --prefer-stable
-
-install: clean ## Install regular php dependencies
-	docker compose run app composer update -n --prefer-dist
-
-lowest: clean ## Install lowest php dependencies
-	docker compose run app composer update -n --ansi --prefer-dist --prefer-lowest
+install: clean ## Install regular PHP dependencies
+	docker compose run app composer update --no-interaction --prefer-dist
 
 test: ## Execute php tests and linters
 	docker compose run app composer test
