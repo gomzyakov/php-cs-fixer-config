@@ -44,13 +44,23 @@ jobs:
   phpstan:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Composer dependencies
+        run: composer update --no-interaction --prefer-dist
+
       - name: Run tests via PHPStan
         run: composer phpstan
 
   php-cs-fixer:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Composer dependencies
+        run: composer update --no-interaction --prefer-dist
+
       - name: Check code style via php-cs-fixer
         run: composer cs-check
