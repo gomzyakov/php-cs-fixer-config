@@ -4,13 +4,16 @@ declare(strict_types = 1);
 
 namespace Gomzyakov\CS;
 
+/**
+ * The class containing the rules for `php-cs-fixer`.
+ *
+ * @see https://github.com/FriendsOfPHP/PHP-CS-Fixer
+ * @see https://mlocati.github.io/php-cs-fixer-configurator/
+ */
 class Rules
 {
     /**
-     * Code style rules for `php-cs-fixer`.
-     *
-     * @see https://github.com/FriendsOfPHP/PHP-CS-Fixer
-     * @see https://mlocati.github.io/php-cs-fixer-configurator/
+     * @var array<string, mixed>
      */
     private static $rules = [
         '@PSR12'                 => true,
@@ -153,6 +156,11 @@ class Rules
         'standardize_increment'             => true,
     ];
 
+    /**
+     * @param array<string, mixed> $overwritten_rules
+     *
+     * @return array<string, mixed>
+     */
     public static function getRules(array $overwritten_rules = []): array
     {
         return array_merge(self::$rules, $overwritten_rules);

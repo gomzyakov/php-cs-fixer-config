@@ -5,6 +5,7 @@ declare(strict_types = 1);
 namespace Gomzyakov\CS;
 
 use PhpCsFixer\Config as PhpCsFixerConfig;
+use PhpCsFixer\ConfigInterface;
 use PhpCsFixer\Finder as PhpCsFixerFinder;
 
 class Config
@@ -12,12 +13,12 @@ class Config
     /**
      * Creates a new Config.
      *
-     * @param PhpCsFixerFinder $finder
-     * @param array            $overwritten_rules
+     * @param PhpCsFixerFinder     $finder
+     * @param array<string, mixed> $overwritten_rules
      *
-     * @return PhpCsFixerConfig
+     * @return ConfigInterface
      */
-    public static function createWithFinder(PhpCsFixerFinder $finder, array $overwritten_rules = []): PhpCsFixerConfig
+    public static function createWithFinder(PhpCsFixerFinder $finder, array $overwritten_rules = []): ConfigInterface
     {
         return (new PhpCsFixerConfig())
             ->setFinder($finder)

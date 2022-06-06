@@ -11,7 +11,7 @@ class Finder
     /**
      * Creates a new Finder.
      *
-     * @param array $routes
+     * @param array<string> $routes
      *
      * @return PhpCsFixerFinder
      */
