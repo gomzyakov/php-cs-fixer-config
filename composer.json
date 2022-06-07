@@ -1,13 +1,12 @@
 {
     "name": "gomzyakov/php-code-style",
-    "description": "Just preferred code style rules for `php-cs-fixer`",
+    "description": "Code style configuration for `php-cs-fixer` based on PSR-12.",
     "type": "package",
     "license": "MIT",
     "keywords": [
         "php",
         "php-cs-fixer",
-        "code-style ",
-        "php-cs-fixer-rules"
+        "code-style"
     ],
     "homepage": "https://github.com/gomzyakov/php-code-style",
     "authors": [
