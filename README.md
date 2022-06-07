@@ -7,13 +7,17 @@ Code style configuration for `php-cs-fixer` based on [PSR-12](https://www.php-fi
 
 ## Installation
 
-First of all install `gomzyakov/php-code-style` via composer:
+### Step 1 of 3
+
+Install `gomzyakov/php-code-style` via composer:
 
 ```sh
 composer require --dev gomzyakov/php-code-style
 ```
 
-The package `friendsofphp/php-cs-fixer` will be installed automatically
+The base package `friendsofphp/php-cs-fixer` will be installed automatically.
+
+### Step 2 of 3
 
 Then create file `.php-cs-fixer.dist.php` at the root of your project with following contents:
 
@@ -31,7 +35,9 @@ return Config::createWithFinder(Finder::createWithRoutes($routes));
 
 Change the value of `$routes` depending on where your project's source code is.
 
-And that's it. You can now find code style violations with following command:
+### Step 3 of 3
+
+**And that's it!** You can now find code style violations with following command:
 
 ```sh
 ./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php --dry-run
@@ -60,10 +66,6 @@ Config::createWithFinder($finder, [
 ])
 ```
 
-## Code style
-
-Our code style is based primarily on [PSR-12](https://www.php-fig.org/psr/psr-12/) with some changes.
-
 ## Support
 
 If you find any package errors, please, [make an issue](https://github.com/gomzyakov/php-code-style/issues) in current repository.
@@ -71,3 +73,8 @@ If you find any package errors, please, [make an issue](https://github.com/gomzy
 ## License
 
 This is open-sourced software licensed under the [MIT License](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
+
+## Special thanks
+
+- https://github.com/FriendsOfPHP/PHP-CS-Fixer
+- https://mlocati.github.io/php-cs-fixer-configurator/
