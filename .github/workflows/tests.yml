@@ -1,0 +1,66 @@
+name: test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  phpunit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+#      - name: Install PHP extensions
+#        run: sudo apt-get install -y php-phpdbg
+
+      - name: Install Composer dependencies
+        run: composer update --no-interaction --prefer-dist
+
+      - name: Run tests via PHPUnit
+        env:
+          XDEBUG_MODE: coverage
+        run: |
+          vendor/bin/phpunit --coverage-clover=coverage.xml
+          cat ./coverage.xml
+
+      - name: Show coverage.xml
+        run: cat ./coverage.xml
+
+      - name: Upload coverage.xml to Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage.xml
+          fail_ci_if_error: true
+          flags: unittests
+          name: codecov-umbrella
+          verbose: true
+          env_vars: PHP
+
+  phpstan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Composer dependencies
+        run: composer update --no-interaction --prefer-dist
+
+      - name: Run tests via PHPStan
+        run: composer phpstan
+
+  php-cs-fixer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Composer dependencies
+        run: composer update --no-interaction --prefer-dist
+
+      - name: Check code style via php-cs-fixer
+        run: composer cs-check
