@@ -3,6 +3,8 @@ name: test
 on:
   push:
     branches: [ main ]
+    tags:
+      - 'v*'
   pull_request:
     branches: [ main ]
 
@@ -13,9 +15,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-#      - name: Install PHP extensions
-#        run: sudo apt-get install -y php-phpdbg
 
       - name: Install Composer dependencies
         run: composer update --no-interaction --prefer-dist
