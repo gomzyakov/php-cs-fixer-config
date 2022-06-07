@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use Gomzyakov\CS\Finder;
 use Gomzyakov\CS\Config;
 
