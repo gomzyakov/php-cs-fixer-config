@@ -1,9 +1,9 @@
 # php-code-style
 
-![version](https://img.shields.io/badge/release-v0.0.0-blue)
+![version](https://img.shields.io/badge/release-v0.1.0-blue)
 [![codecov](https://codecov.io/gh/gomzyakov/php-code-style/branch/main/graph/badge.svg?token=RH46YRL1CN)](https://codecov.io/gh/gomzyakov/php-code-style)
 
-Just [PSR-12](https://www.php-fig.org/psr/psr-12/)-based code style configuration for `php-cs-fixer`.
+Code style configuration for `php-cs-fixer` based on [PSR-12](https://www.php-fig.org/psr/psr-12/).
 
 ## Installation
 
