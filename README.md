@@ -9,13 +9,11 @@ Code style configuration for [`friendsofphp/php-cs-fixer`](https://github.com/Fr
 
 ### Step 1 of 3
 
-Install `gomzyakov/php-code-style` via composer:
+Install `gomzyakov/php-code-style` & base package `friendsofphp/php-cs-fixer` via Composer:
 
 ```sh
-composer require --dev gomzyakov/php-code-style
+composer require --dev friendsofphp/php-cs-fixer gomzyakov/php-code-style
 ```
-
-The base package `friendsofphp/php-cs-fixer` will be installed automatically.
 
 ### Step 2 of 3
 
