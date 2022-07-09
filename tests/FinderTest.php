@@ -1,12 +1,11 @@
 <?php
 
 use Gomzyakov\CS\Finder;
-use Gomzyakov\CS\Rules;
-use PHPUnit\Framework\TestCase;
 use PhpCsFixer\Finder as PhpCsFixerFinder;
+use PHPUnit\Framework\TestCase;
 
 /**
- * @covers \Gomzyakov\CS\Rules::getRules
+ * @covers \Gomzyakov\CS\Finder::createWithRoutes
  */
 class FinderTest extends TestCase
 {
