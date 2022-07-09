@@ -18,6 +18,9 @@ install: clean ## Install regular PHP dependencies
 test: ## Execute php tests and linters
 	docker compose run app composer test
 
+phpunit: ## Execute PHPUnit tests
+	docker compose run app composer phpunit
+
 shell: ## Start shell into container with php
 	docker compose run app sh
 
