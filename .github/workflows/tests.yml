@@ -8,13 +8,24 @@ on:
   pull_request:
     branches: [ main ]
 
+permissions:
+  contents: read
+
 jobs:
   phpunit:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.operating-system }}
+
+    strategy:
+      matrix:
+        operating-system: ['ubuntu-latest']
+        php-versions: ['7.4', '8.0', '8.1']
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+
+      - name: Check PHP Version
+        run: php -v
 
       - name: Install Composer dependencies
         run: composer update --no-interaction --prefer-dist
