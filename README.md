@@ -4,25 +4,27 @@
 [![codecov](https://codecov.io/gh/gomzyakov/php-code-style/branch/main/graph/badge.svg?token=RH46YRL1CN)](https://codecov.io/gh/gomzyakov/php-code-style)
 
 
-[`friendsofphp/php-cs-fixer`](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
-
 ## Quickstart with Laravel Pint
 
 ### Step 1 of 2
 
-Install `gomzyakov/php-code-style` & base package `friendsofphp/php-cs-fixer` via Composer:
+Install [Laravel Pint](https://github.com/laravel/pint) & this package via Composer:
 
 ```sh
-composer require --dev friendsofphp/php-cs-fixer gomzyakov/php-code-style
+composer require --dev laravel/pint gomzyakov/php-code-style
 ```
 
+**And that's it!** You can now find code style violations with following command:
+
+```sh
+./vendor/bin/pint --config vendor/gomzyakov/php-code-style/pint.json
+```
 
 ## Quickstart with `php-cs-fixer`
 
-
 ### Step 1 of 3
 
-Install `gomzyakov/php-code-style` & base package `friendsofphp/php-cs-fixer` via Composer:
+Install [`friendsofphp/php-cs-fixer`](https://github.com/FriendsOfPHP/PHP-CS-Fixer) & this package via Composer:
 
 ```sh
 composer require --dev friendsofphp/php-cs-fixer gomzyakov/php-code-style
@@ -50,11 +52,6 @@ Change the value of `$routes` depending on where your project's source code is.
 ### Step 3 of 3
 
 **And that's it!** You can now find code style violations with following command:
-
-```sh
-./vendor/bin/pint --config vendor/gomzyakov/php-code-style/pint.json
-```
-
 
 ```sh
 ./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php --dry-run
