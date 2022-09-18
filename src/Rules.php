@@ -19,8 +19,11 @@ class Rules
      */
     public static function getRules(array $overwritten_rules = []): array
     {
+        /** @var string $pint_rules */
         $pint_rules = file_get_contents(__DIR__ . '/../pint.json');
-        $rules      = \json_decode($pint_rules, true);
+
+        /** @var array{rules: array<mixed>} $rules */
+        $rules = \json_decode($pint_rules, true);
 
         return array_merge($rules['rules'], $overwritten_rules);
     }
