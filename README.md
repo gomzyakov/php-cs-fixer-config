@@ -1,11 +1,12 @@
+# Code style configuration for Pint and `friendsofphp/php-cs-fixer`.
+
 ![version](https://img.shields.io/badge/release-v0.2.2-blue)
 [![codecov](https://codecov.io/gh/gomzyakov/php-code-style/branch/main/graph/badge.svg?token=RH46YRL1CN)](https://codecov.io/gh/gomzyakov/php-code-style)
 
-PHP code style configuration for Laravel Pint and `friendsofphp/php-cs-fixer`.
 
 [`friendsofphp/php-cs-fixer`](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
 
-# Quickstart with Laravel Pint
+## Quickstart with Laravel Pint
 
 ### Step 1 of 2
 
@@ -16,7 +17,7 @@ composer require --dev friendsofphp/php-cs-fixer gomzyakov/php-code-style
 ```
 
 
-# Quickstart with `php-cs-fixer`
+## Quickstart with `php-cs-fixer`
 
 
 ### Step 1 of 3
@@ -65,7 +66,7 @@ And then completely fix them all with:
 ./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php
 ```
 
-# Configuration
+## Configuration
 
 You must pass a set of routes to the `Finder::createWithRoutes()` call. For example, for [Laravel](https://laravel.com) projects, this would be:
 
@@ -82,15 +83,15 @@ Config::createWithFinder($finder, [
 ])
 ```
 
-# Support
+## Support
 
 If you find any package errors, please, [make an issue](https://github.com/gomzyakov/php-code-style/issues) in current repository.
 
-# License
+## License
 
 This is open-sourced software licensed under the [MIT License](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
-# Special thanks
+## Special thanks
 
 - https://github.com/FriendsOfPHP/PHP-CS-Fixer
 - https://mlocati.github.io/php-cs-fixer-configurator/
