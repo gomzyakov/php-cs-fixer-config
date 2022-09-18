@@ -1,6 +1,6 @@
 # Code-style configuration for Pint and `php-cs-fixer`
 
-![version](https://img.shields.io/badge/release-v0.2.2-blue)
+![version](https://img.shields.io/badge/release-v1.0.0-blue)
 [![codecov](https://codecov.io/gh/gomzyakov/php-code-style/branch/main/graph/badge.svg?token=RH46YRL1CN)](https://codecov.io/gh/gomzyakov/php-code-style)
 
 
