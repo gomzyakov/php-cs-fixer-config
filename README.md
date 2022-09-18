@@ -34,7 +34,6 @@ composer require --dev friendsofphp/php-cs-fixer gomzyakov/php-code-style
 
 ### Step 2 of 3
 
-
 Then create file `.php-cs-fixer.dist.php` at the root of your project with following contents:
 
 ```php
