@@ -1,4 +1,4 @@
-# Code style configuration for Pint and `friendsofphp/php-cs-fixer`.
+# Code-style configuration for Pint and `php-cs-fixer`
 
 ![version](https://img.shields.io/badge/release-v0.2.2-blue)
 [![codecov](https://codecov.io/gh/gomzyakov/php-code-style/branch/main/graph/badge.svg?token=RH46YRL1CN)](https://codecov.io/gh/gomzyakov/php-code-style)
@@ -13,6 +13,8 @@ Install [Laravel Pint](https://github.com/laravel/pint) & this package via Compo
 ```sh
 composer require --dev laravel/pint gomzyakov/php-code-style
 ```
+
+### Step 2 of 2
 
 **And that's it!** You can now find code style violations with following command:
 
