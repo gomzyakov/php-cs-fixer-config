@@ -1,11 +1,23 @@
-# php-code-style
-
 ![version](https://img.shields.io/badge/release-v0.2.2-blue)
 [![codecov](https://codecov.io/gh/gomzyakov/php-code-style/branch/main/graph/badge.svg?token=RH46YRL1CN)](https://codecov.io/gh/gomzyakov/php-code-style)
 
-Code style configuration for [`friendsofphp/php-cs-fixer`](https://github.com/FriendsOfPHP/PHP-CS-Fixer) based on [PSR-12](https://www.php-fig.org/psr/psr-12/).
+PHP code style configuration for Laravel Pint and `friendsofphp/php-cs-fixer`.
 
-## Installation
+[`friendsofphp/php-cs-fixer`](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
+
+# Quickstart with Laravel Pint
+
+### Step 1 of 2
+
+Install `gomzyakov/php-code-style` & base package `friendsofphp/php-cs-fixer` via Composer:
+
+```sh
+composer require --dev friendsofphp/php-cs-fixer gomzyakov/php-code-style
+```
+
+
+# Quickstart with `php-cs-fixer`
+
 
 ### Step 1 of 3
 
@@ -16,6 +28,7 @@ composer require --dev friendsofphp/php-cs-fixer gomzyakov/php-code-style
 ```
 
 ### Step 2 of 3
+
 
 Then create file `.php-cs-fixer.dist.php` at the root of your project with following contents:
 
@@ -38,6 +51,11 @@ Change the value of `$routes` depending on where your project's source code is.
 **And that's it!** You can now find code style violations with following command:
 
 ```sh
+./vendor/bin/pint --config vendor/gomzyakov/php-code-style/pint.json
+```
+
+
+```sh
 ./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php --dry-run
 ```
 
@@ -47,7 +65,7 @@ And then completely fix them all with:
 ./vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.dist.php
 ```
 
-## Configuration
+# Configuration
 
 You must pass a set of routes to the `Finder::createWithRoutes()` call. For example, for [Laravel](https://laravel.com) projects, this would be:
 
@@ -64,15 +82,15 @@ Config::createWithFinder($finder, [
 ])
 ```
 
-## Support
+# Support
 
 If you find any package errors, please, [make an issue](https://github.com/gomzyakov/php-code-style/issues) in current repository.
 
-## License
+# License
 
 This is open-sourced software licensed under the [MIT License](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
 
-## Special thanks
+# Special thanks
 
 - https://github.com/FriendsOfPHP/PHP-CS-Fixer
 - https://mlocati.github.io/php-cs-fixer-configurator/
