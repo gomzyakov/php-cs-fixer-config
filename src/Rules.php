@@ -4,6 +4,8 @@ declare(strict_types = 1);
 
 namespace Gomzyakov\CS;
 
+use function json_decode;
+
 /**
  * The class containing the rules for `php-cs-fixer`.
  *
@@ -23,7 +25,7 @@ class Rules
         $pint_rules = file_get_contents(__DIR__ . '/../pint.json');
 
         /** @var array{rules: array<mixed>} $rules */
-        $rules = \json_decode($pint_rules, true);
+        $rules = json_decode($pint_rules, true);
 
         return array_merge($rules['rules'], $overwritten_rules);
     }
