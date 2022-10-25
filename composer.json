@@ -1,5 +1,5 @@
 {
-    "name": "gomzyakov/php-code-style",
+    "name": "gomzyakov/php-style",
     "description": "Code style configuration for `php-cs-fixer` based on PSR-12.",
     "type": "package",
     "license": "MIT",
