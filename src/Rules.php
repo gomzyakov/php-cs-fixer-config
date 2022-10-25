@@ -15,16 +15,16 @@ use function json_decode;
 class Rules
 {
     /**
-     * @param array<string, mixed> $overwritten_rules
+     * @param array<string, array<string, mixed>|bool> $overwritten_rules
      *
-     * @return array<string, mixed>
+     * @return array<string, array<string, mixed>|bool>
      */
     public static function getRules(array $overwritten_rules = []): array
     {
         /** @var string $pint_rules */
         $pint_rules = file_get_contents(__DIR__ . '/../pint.json');
 
-        /** @var array{rules: array<mixed>} $rules */
+        /** @var array{rules: array<string, array<string, mixed>|bool>} $rules */
         $rules = json_decode($pint_rules, true);
 
         return array_merge($rules['rules'], $overwritten_rules);

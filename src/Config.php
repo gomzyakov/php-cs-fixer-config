@@ -13,8 +13,8 @@ class Config
     /**
      * Creates a new Config.
      *
-     * @param PhpCsFixerFinder     $finder
-     * @param array<string, mixed> $overwritten_rules
+     * @param PhpCsFixerFinder                         $finder
+     * @param array<string, array<string, mixed>|bool> $overwritten_rules
      *
      * @return ConfigInterface
      */
