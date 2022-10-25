@@ -1,7 +1,7 @@
 # Code-style configuration for Pint and `php-cs-fixer`
 
 ![version](https://img.shields.io/badge/release-v1.0.3-blue)
-[![codecov](https://codecov.io/gh/gomzyakov/php-code-style/branch/main/graph/badge.svg?token=RH46YRL1CN)](https://codecov.io/gh/gomzyakov/php-code-style)
+[![codecov](https://codecov.io/gh/gomzyakov/php-style/branch/main/graph/badge.svg?token=RH46YRL1CN)](https://codecov.io/gh/gomzyakov/php-code-style)
 
 
 ## Quickstart with Laravel Pint
@@ -11,7 +11,7 @@
 Install [Laravel Pint](https://github.com/laravel/pint) & this package via Composer:
 
 ```sh
-composer require --dev laravel/pint gomzyakov/php-code-style
+composer require --dev laravel/pint gomzyakov/php-style
 ```
 
 ### Step 2 of 2
@@ -19,7 +19,7 @@ composer require --dev laravel/pint gomzyakov/php-code-style
 **And that's it!** You can now find code style violations with following command:
 
 ```sh
-./vendor/bin/pint --config vendor/gomzyakov/php-code-style/pint.json
+./vendor/bin/pint --config vendor/gomzyakov/php-style/pint.json
 ```
 
 ## Quickstart with `php-cs-fixer`
@@ -29,7 +29,7 @@ composer require --dev laravel/pint gomzyakov/php-code-style
 Install [`friendsofphp/php-cs-fixer`](https://github.com/FriendsOfPHP/PHP-CS-Fixer) & this package via Composer:
 
 ```sh
-composer require --dev friendsofphp/php-cs-fixer gomzyakov/php-code-style
+composer require --dev friendsofphp/php-cs-fixer gomzyakov/php-style
 ```
 
 ### Step 2 of 3
@@ -83,11 +83,11 @@ Config::createWithFinder($finder, [
 
 ## Support
 
-If you find any package errors, please, [make an issue](https://github.com/gomzyakov/php-code-style/issues) in current repository.
+If you find any package errors, please, [make an issue](https://github.com/gomzyakov/php-style/issues) in current repository.
 
 ## License
 
-This is open-sourced software licensed under the [MIT License](https://github.com/gomzyakov/php-code-style/blob/main/LICENSE).
+This is open-sourced software licensed under the [MIT License](https://github.com/gomzyakov/php-style/blob/main/LICENSE).
 
 ## Special thanks
 
