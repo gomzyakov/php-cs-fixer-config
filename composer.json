@@ -8,7 +8,7 @@
         "php-cs-fixer",
         "code-style"
     ],
-    "homepage": "https://github.com/gomzyakov/php-code-style",
+    "homepage": "https://github.com/gomzyakov/php-style",
     "authors": [
         {
             "name": "Alexander Gomzyakov",
