@@ -1,6 +1,6 @@
 # Code-style configuration for PHP
 
-![version](https://img.shields.io/badge/release-v1.1.0-blue)
+![version](https://img.shields.io/badge/release-v1.2.0-blue)
 [![codecov](https://codecov.io/gh/gomzyakov/php-style/branch/main/graph/badge.svg?token=RH46YRL1CN)](https://codecov.io/gh/gomzyakov/php-code-style)
 
 The following describes the use of styles in conjunction with `friendsofphp/php-cs-fixer`. Also you can use these style settings for [Laravel Pint](PINT.md).
