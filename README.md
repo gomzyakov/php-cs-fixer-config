@@ -1,26 +1,9 @@
-# Code-style configuration for Pint and `php-cs-fixer`
+# Code-style configuration for PHP
 
 ![version](https://img.shields.io/badge/release-v1.1.0-blue)
 [![codecov](https://codecov.io/gh/gomzyakov/php-style/branch/main/graph/badge.svg?token=RH46YRL1CN)](https://codecov.io/gh/gomzyakov/php-code-style)
 
-
-## Quickstart with Laravel Pint
-
-### Step 1 of 2
-
-Install [Laravel Pint](https://github.com/laravel/pint) & this package via Composer:
-
-```sh
-composer require --dev laravel/pint gomzyakov/php-style
-```
-
-### Step 2 of 2
-
-**And that's it!** You can now find code style violations with following command:
-
-```sh
-./vendor/bin/pint --config vendor/gomzyakov/php-style/pint.json
-```
+The following describes the use of styles in conjunction with `friendsofphp/php-cs-fixer`. Also you can use these style settings for [Laravel Pint](PINT.md).
 
 ## Quickstart with `php-cs-fixer`
 
