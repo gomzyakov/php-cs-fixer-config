@@ -1,11 +1,11 @@
-# Code-style configuration for PHP
+# Code-style configuration for `php-cs-fixer`
 
 ![version](https://img.shields.io/badge/release-v1.3.0-blue)
 [![codecov](https://codecov.io/gh/gomzyakov/php-cs-fixer-config/branch/main/graph/badge.svg?token=RH46YRL1CN)](https://codecov.io/gh/gomzyakov/php-code-style)
 
-The following describes the use of styles in conjunction with `friendsofphp/php-cs-fixer`. Also you can use these style settings for [Laravel Pint](PINT.md).
+This package allows sharing identical [php-cs-fixer](https://github.com/PHP-CS-Fixer/PHP-CS-Fixer) formatting rules across all of your projects without copy-and-pasting configuration files.
 
-## Quickstart with `php-cs-fixer`
+## Quickstart
 
 ### Step 1 of 3
 
@@ -63,6 +63,10 @@ Config::createWithFinder($finder, [
     'array_indentation' => false
 ])
 ```
+
+## Laravel Pint
+
+The following describes the use of styles in conjunction with `friendsofphp/php-cs-fixer`. Also you can use these style settings for [Laravel Pint](PINT.md).
 
 ## Support
 
