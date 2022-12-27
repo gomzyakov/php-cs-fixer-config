@@ -38,4 +38,3 @@ updates:
       - "gomzyakov"
     labels:
       - "dependencies"
-    versioning-strategy: increase
