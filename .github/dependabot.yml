@@ -27,7 +27,6 @@ updates:
 
   # Enable version updates for Docker
   - package-ecosystem: "docker"
-    versioning-strategy: increase
     # Look for a `Dockerfile` in the `root` directory
     directory: "/"
     schedule:
