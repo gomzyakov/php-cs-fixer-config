@@ -27,6 +27,6 @@ class Rules
         /** @var array{rules: array<string, array<string, mixed>|bool>} $rules */
         $rules = json_decode($pint_rules, true);
 
-        return array_merge($rules['rules'], $overwritten_rules);
+        return array_replace_recursive($rules['rules'], $overwritten_rules);
     }
 }
