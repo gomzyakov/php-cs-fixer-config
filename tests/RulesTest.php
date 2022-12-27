@@ -24,26 +24,26 @@ class RulesTest extends TestCase
         // Check array-rule before replace
         $this->assertSame(
             [
-                "default" => "align_single_space_minimal",
-                "operators" => [
-                    "=" => "align_single_space",
-                    "=>" => "align_single_space"
-                ]
+                'default'   => 'align_single_space_minimal',
+                'operators' => [
+                    '='  => 'align_single_space',
+                    '=>' => 'align_single_space',
+                ],
             ],
             $rules['binary_operator_spaces']
         );
 
         $overwritten_rules = ['binary_operator_spaces' => ['default' => 'foo']];
-        $rules = Rules::getRules($overwritten_rules);
+        $rules             = Rules::getRules($overwritten_rules);
 
         // Check array-rule after replace
         $this->assertSame(
             [
-                "default" => "foo", // <-- Replaced rule
-                "operators" => [
-                    "=" => "align_single_space",
-                    "=>" => "align_single_space"
-                ]
+                'default'   => 'foo', // <-- Replaced rule
+                'operators' => [
+                    '='  => 'align_single_space',
+                    '=>' => 'align_single_space',
+                ],
             ],
             $rules['binary_operator_spaces']
         );
