@@ -10,31 +10,30 @@ updates:
     directory: "/"
     # Check for updates once a day
     schedule:
-      interval: "daily"
+      interval: "weekly"
     # Force commit message preferences
     # Docs https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#commit-message
     commit-message:
       prefix: "build"
       include: "scope"
-    # Add assignees
-    assignees:
-      - "gomzyakov"
-    # Specify labels for npm pull requests
-    labels:
-      - "dependencies"
     # Increase the version requirements for Composer only when required
     versioning-strategy: increase
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    commit-message:
+      prefix: "build"
+      include: "scope"
 
   # Enable version updates for Docker
   - package-ecosystem: "docker"
     # Look for a `Dockerfile` in the `root` directory
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
     commit-message:
       prefix: "build"
       include: "scope"
-    assignees:
-      - "gomzyakov"
-    labels:
-      - "dependencies"
