@@ -8,25 +8,15 @@ updates:
   - package-ecosystem: "composer"
     # Look for a `composer.json` in the `root` directory
     directory: "/"
-    # Check for updates once a day
+    versioning-strategy: increase
     schedule:
       interval: "weekly"
-    # Force commit message preferences
-    # Docs https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#commit-message
-    commit-message:
-      prefix: "build"
-      include: "scope"
-    # Increase the version requirements for Composer only when required
-    versioning-strategy: increase
 
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
-    commit-message:
-      prefix: "build"
-      include: "scope"
 
   # Enable version updates for Docker
   - package-ecosystem: "docker"
@@ -34,6 +24,3 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    commit-message:
-      prefix: "build"
-      include: "scope"
