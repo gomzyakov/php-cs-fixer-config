@@ -2,7 +2,7 @@ FROM php:8.2.7-alpine
 
 ENV COMPOSER_HOME="/tmp/composer"
 
-COPY --from=composer:2.5.7 /usr/bin/composer /usr/bin/composer
+COPY --from=composer:2.5.8 /usr/bin/composer /usr/bin/composer
 
 RUN set -x \
     && apk add --no-cache git \
