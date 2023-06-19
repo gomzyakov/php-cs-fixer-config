@@ -20,7 +20,7 @@
         "ext-json": "*"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.17",
+        "friendsofphp/php-cs-fixer": "^3.18",
         "phpunit/phpunit": "^10.2",
         "phpstan/phpstan": "^1.10",
         "mockery/mockery": "^1.6"
