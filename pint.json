@@ -10,7 +10,10 @@
                 "=>": "align_single_space"
             }
         },
-        "blank_line_after_namespace": true,
+        "blank_lines_before_namespace": {
+            "min_line_breaks": 2,
+            "max_line_breaks": 2
+        },
         "blank_line_after_opening_tag": true,
         "blank_line_before_statement": true,
         "braces": true,
@@ -88,7 +91,6 @@
         "short_scalar_cast": true,
         "single_line_comment_style": true,
         "single_blank_line_at_eof": true,
-        "single_blank_line_before_namespace": true,
         "single_line_after_imports": true,
         "single_quote": true,
         "space_after_semicolon": true,
