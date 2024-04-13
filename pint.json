@@ -2,7 +2,7 @@
     "preset": "laravel",
     "rules": {
         "@PSR12": true,
-        "@PHP80Migration": true,
+        "@PHP83Migration": true,
         "binary_operator_spaces": {
             "default": "align_single_space_minimal",
             "operators": {
@@ -124,7 +124,7 @@
         "phpdoc_to_return_type": false,
         "phpdoc_no_empty_return": false,
         "no_trailing_whitespace_in_comment": false,
-        "php_unit_test_class_requires_covers": true,
+        "php_unit_test_class_requires_covers": false,
         "php_unit_method_casing": {
             "case": "snake_case"
         },
