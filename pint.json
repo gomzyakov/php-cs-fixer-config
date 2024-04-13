@@ -2,7 +2,7 @@
     "preset": "laravel",
     "rules": {
         "@PSR12": true,
-        "@PHP80Migration": true,
+        "@PHP83Migration": true,
         "binary_operator_spaces": {
             "default": "align_single_space_minimal",
             "operators": {
