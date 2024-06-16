@@ -23,7 +23,9 @@ jobs:
           ini-values: max_execution_time=180
 
       - name: Install PHP extensions
-        run: sudo apt-get install -y php-phpdbg
+        run: |
+          sudo apt update
+          sudo apt-get install -y php-phpdbg
 
       - name: Install Composer Dependencies
         run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
