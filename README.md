@@ -2,7 +2,6 @@
 
 [![packagist](https://img.shields.io/packagist/v/gomzyakov/php-cs-fixer-config.svg)](https://packagist.org/packages/gomzyakov/php-cs-fixer-config)
 [![downloads_count](https://img.shields.io/packagist/dt/gomzyakov/php-cs-fixer-config.svg)](https://packagist.org/packages/gomzyakov/php-cs-fixer-config)
-[![GitHub release](https://img.shields.io/github/release/gomzyakov/php-cs-fixer-config.svg)](https://github.com/gomzyakov/php-cs-fixer-config/releases/latest)
 [![license](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/gomzyakov/php-cs-fixer-config/blob/development/LICENSE)
 [![codecov](https://codecov.io/gh/gomzyakov/php-cs-fixer-config/branch/main/graph/badge.svg?token=4CYTVMVUYV)](https://codecov.io/gh/gomzyakov/php-cs-fixer-config)
 
