@@ -8,7 +8,6 @@ updates:
   - package-ecosystem: "composer"
     # Look for a `composer.json` in the `root` directory
     directory: "/"
-    versioning-strategy: increase
     schedule:
       interval: "monthly"
 
