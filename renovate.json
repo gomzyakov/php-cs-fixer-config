@@ -5,6 +5,6 @@
         ":disableDependencyDashboard"
     ],
     "schedule": [
-        "on friday"
+        "on the first day of the month"
     ]
 }
