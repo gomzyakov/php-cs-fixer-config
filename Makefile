@@ -13,16 +13,16 @@ build: ## Build docker image for local development
 	docker compose build
 
 install: ## Install regular PHP dependencies
-	docker compose run --rm app composer install --no-interaction --prefer-dist
+	docker compose run --rm --remove-orphans app composer install --no-interaction --prefer-dist
 
 test: ## Execute php tests and linters
-	docker compose run app composer test
+	docker compose run --rm --remove-orphans app composer test
 
 phpunit: ## Execute PHPUnit tests
-	docker compose run app composer phpunit
+	docker compose run --rm --remove-orphans app composer phpunit
 
 shell: ## Start shell into container with php
-	docker compose run app sh
+	docker compose run --rm --remove-orphans app sh
 
 clean: ## Remove all dependencies and unimportant files
 	-rm -Rf ./vendor
