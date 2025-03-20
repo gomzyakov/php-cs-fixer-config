@@ -54,7 +54,7 @@ And then completely fix them all with:
 You must pass a set of routes to the `Finder::createWithRoutes()` call. For example, for [Laravel](https://laravel.com) projects, this would be:
 
 ```php
-Finder::createWithRoutes(['./app', './config', './database', './resources', './routes', './tests'])
+Finder::createWithRoutes(['./app', './config', './database', './routes', './tests'])
 ```
 
 Also, you can pass a custom set of rules to the `Config::createWithFinder()` call:
@@ -65,10 +65,6 @@ Config::createWithFinder($finder, [
     'array_indentation' => false
 ])
 ```
-
-## Laravel Pint
-
-The following describes the use of styles in conjunction with `friendsofphp/php-cs-fixer`. Also you can use these style settings for [Laravel Pint](PINT.md).
 
 ## Support
 

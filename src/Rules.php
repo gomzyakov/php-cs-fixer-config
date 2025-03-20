@@ -22,7 +22,7 @@ class Rules
     public static function getRules(array $overwritten_rules = []): array
     {
         /** @var string $pint_rules */
-        $pint_rules = file_get_contents(__DIR__ . '/../pint.json');
+        $pint_rules = file_get_contents(__DIR__ . '/../.rules.json');
 
         /** @var array{rules: array<string, array<string, mixed>|bool>} $rules */
         $rules = json_decode($pint_rules, true);
