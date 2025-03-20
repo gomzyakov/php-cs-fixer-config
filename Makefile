@@ -12,8 +12,8 @@ help: ## Show this help
 build: ## Build docker image for local development
 	docker compose build
 
-install: clean ## Install regular PHP dependencies
-	docker compose run app composer update --no-interaction --prefer-dist
+install: ## Install regular PHP dependencies
+	docker compose run --rm app composer install --no-interaction --prefer-dist
 
 test: ## Execute php tests and linters
 	docker compose run app composer test
@@ -25,5 +25,5 @@ shell: ## Start shell into container with php
 	docker compose run app sh
 
 clean: ## Remove all dependencies and unimportant files
-	-rm -Rf ./composer.lock ./vendor
+	-rm -Rf ./vendor
 
